@@ -1,4 +1,4 @@
-# if и else
+# if Рё else
 # if (<condition>) {<do something>} else {<do another thing>}
 if (sqrt(2) > 1.5) {
     print("Greater!")
@@ -9,20 +9,20 @@ if (sqrt(2) > 1.5) {
 # ifelse
 if (c(TRUE, FALSE)) print("Hmm...?")
 
-ifelse(runif(8) > 0.5, "Орел", "Решка")
+ifelse(runif(8) > 0.5, "РћСЂРµР»", "Р РµС€РєР°")
 
 x <- runif(8)
-ifelse(x > 2/3, "Камень",
-       ifelse(x > 1/3, "Ножницы", "Бумага"))
+ifelse(x > 2/3, "РљР°РјРµРЅСЊ",
+       ifelse(x > 1/3, "РќРѕР¶РЅРёС†С‹", "Р‘СѓРјР°РіР°"))
 
-# Множественный выбор: switch
+# РњРЅРѕР¶РµСЃС‚РІРµРЅРЅС‹Р№ РІС‹Р±РѕСЂ: switch
 switch("factorial",
        sum = 5 + 5,
        product = 5 * 5,
        factorial = factorial(5),
        0)
 
-# Циклы: repeat
+# Р¦РёРєР»С‹: repeat
 i <- 0
 repeat {
     i <- i + runif(1)
@@ -30,14 +30,14 @@ repeat {
     if (i > 5) break
 }
 
- # Циклы: while
+ # Р¦РёРєР»С‹: while
 i <- 2^14
 while (i > 1000) {
     i <- i / 2
     print(i)
 }
 
-# Циклы: for
+# Р¦РёРєР»С‹: for
 for (i in 1:8) {
     if (i %% 2 == 0) print(i)
 }
@@ -48,7 +48,7 @@ for (i in letters) {
     print(i)
 }
 
-# for против векторизации
+# for РїСЂРѕС‚РёРІ РІРµРєС‚РѕСЂРёР·Р°С†РёРё
 v <- 1:1e6
 system.time({
     x <- 0
