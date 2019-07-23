@@ -1,14 +1,14 @@
-# Пакеты
+# РџР°РєРµС‚С‹
 .libPaths()
 
 installed.packages()
 
-# Подключение пакетов
+# РџРѕРґРєР»СЋС‡РµРЅРёРµ РїР°РєРµС‚РѕРІ
 library(grid)
 grid.newpage()
 grid.lines()
 
-# Установка пакетов из CRAN
+# РЈСЃС‚Р°РЅРѕРІРєР° РїР°РєРµС‚РѕРІ РёР· CRAN
 install.packages("xts", dependencies = TRUE)
 library(xts)
 update.packages()
